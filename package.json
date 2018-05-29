@@ -1,7 +1,7 @@
 {
-  "name": "package-starter",
-  "version": "0.1.2",
-  "description": "Start an npm package.",
+  "name": "passes-wcag",
+  "version": "0.1.0",
+  "description": "Evaluate if a to colors have sufficient contrast to pass WCAG requirements.",
   "main": "build/index.js",
   "scripts": {
     "build": "babel src -d build",
@@ -12,18 +12,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/misund/get-relative-luminance.git"
+    "url": "git+https://github.com/misund/passes-wcag.git"
   },
   "keywords": [
-    "init",
-    "package starter"
+    "wcag",
+    "color",
+    "contrast",
+    "luminance",
+    "contrast-ratio",
+    "accessibility",
+    "a11y",
+    "relative-luminance",
+    "color-contrast",
+    "text-legibility"
   ],
   "author": "Just Thomas Hiorth Misund",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/misund/package-starter/issues"
+    "url": "https://github.com/misund/passes-wcag/issues"
   },
-  "homepage": "https://github.com/misund/package-starter#readme",
+  "homepage": "https://github.com/misund/passes-wcag#readme",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
@@ -34,5 +42,8 @@
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.8.2",
     "mocha": "5.2.0"
+  },
+  "dependencies": {
+    "get-contrast-ratio": "0.1.3"
   }
 }
