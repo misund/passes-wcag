@@ -1,6 +1,6 @@
 {
   "name": "passes-wcag",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Evaluate if a to colors have sufficient contrast to pass WCAG requirements.",
   "main": "build/index.js",
   "scripts": {
