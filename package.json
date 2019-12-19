@@ -36,7 +36,7 @@
   "homepage": "https://github.com/misund/passes-wcag#readme",
   "devDependencies": {
     "@babel/cli": "7.7.7",
-    "@babel/core": "7.7.5",
+    "@babel/core": "7.7.7",
     "@babel/preset-env": "7.7.6",
     "@babel/register": "7.7.4",
     "eslint": "6.7.2",
