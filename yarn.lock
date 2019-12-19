@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@babel/cli@7.7.5":
-  version "7.7.5"
-  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.7.5.tgz#25702cc65418efc06989af3727897b9f4c8690b6"
+"@babel/cli@7.7.7":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.7.7.tgz#56849acbf81d1a970dd3d1b3097c8ebf5da3f534"
   dependencies:
     commander "^4.0.1"
     convert-source-map "^1.1.0"
