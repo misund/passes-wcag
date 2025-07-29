@@ -1,6 +1,3 @@
-[![Greenkeeper badge](https://badges.greenkeeper.io/misund/passes-wcag.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/misund/passes-wcag.svg?branch=master)](https://travis-ci.org/misund/passes-wcag)
-
 # Passes WCAG
 
 Evaluate whether two colors have sufficient contrast to pass WCAG requirements.
