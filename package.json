@@ -45,7 +45,7 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
     "mocha": "11.7.1",
-    "np": "5.2.1"
+    "np": "10.2.0"
   },
   "dependencies": {
     "get-contrast-ratio": "0.2.1"
