@@ -1,16 +1,28 @@
 {
   "name": "passes-wcag",
   "version": "0.3.0",
-  "description": "Evaluate if a to colors have sufficient contrast to pass WCAG requirements.",
+  "description": "Evaluate if two colors have sufficient contrast to pass WCAG requirements.",
+  "type": "module",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js"
+    }
+  },
+  "files": [
+    "build"
+  ],
   "scripts": {
-    "build": "babel src -d build",
-    "lint": "eslint --max-warnings=0 src",
-    "mocha": "mocha --require @babel/register",
-    "prepublish": "yarn build && yarn test",
-    "postpublish": "git push --tags",
-    "release": "np",
-    "test": "yarn lint && yarn mocha"
+    "build": "tsc",
+    "lint": "eslint --max-warnings=0 src/**/*.ts",
+    "mocha": "mocha",
+    "test": "yarn lint && yarn mocha",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test",
+    "preversion": "yarn test",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -35,19 +47,22 @@
   },
   "homepage": "https://github.com/misund/passes-wcag#readme",
   "devDependencies": {
-    "@babel/cli": "7.28.0",
-    "@babel/core": "7.28.0",
-    "@babel/preset-env": "7.28.0",
-    "@babel/register": "7.27.1",
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "9.32.0",
+    "@types/mocha": "10.0.10",
+    "@types/node": "22.10.5",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
     "eslint": "9.32.0",
-    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "2.32.0",
-    "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-react": "7.37.5",
     "mocha": "11.7.1",
-    "np": "10.2.0"
+    "np": "10.2.0",
+    "tsx": "4.19.2",
+    "typescript": "5.9.2"
   },
   "dependencies": {
-    "get-contrast-ratio": "0.2.1"
+    "get-contrast-ratio": "1.0.0-1"
   }
 }
